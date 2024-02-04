@@ -303,9 +303,9 @@ Config.Garages = {
     },
     police = {
         label = 'Police',
-        takeVehicle = vector3(462.83, -1019.52, 28.1),
+        takeVehicle = vector3(427.64, -973.62, 25.7),
         spawnPoint = {
-            vector4(446.16, -1025.79, 28.23, 6.59)
+            vector4(425.93, -978.74, 25.7, 267.31)
         },
         showBlip = false,
         blipName = 'Police',
