@@ -299,6 +299,7 @@ RegisterNetEvent('qb-garages:client:takeOutGarage', function(data)
                 exports[Config.FuelResource]:SetFuel(veh, data.stats.fuel)
                 TriggerServerEvent('qb-garages:server:updateVehicleState', 0, vehPlate)
                 TriggerEvent('vehiclekeys:client:SetOwner', vehPlate)
+                TriggerEvent("cw-rgbpainter:client:handleTakeOutVehicle", veh, properties) -- added by pamela for cw-rgbpainter
                 if Config.Warp then TaskWarpPedIntoVehicle(PlayerPedId(), veh, -1) end
                 if Config.VisuallyDamageCars then doCarDamage(veh, data.stats, properties) end
                 SetVehicleEngineOn(veh, true, true, false)
